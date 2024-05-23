@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.js">
   </head>
   <body>
     <div id="container">
@@ -25,7 +24,15 @@
     </div>
 
     <script>
-      // ......
+        const firstName = document.getElementById("firstName")
+        const lastName = document.getElementById("lastName")
+        const age = document.getElementById("age")
+        const person = { firstName,lastName,age
+        }
+
+        const form = document.querySelector("form")
+        form.setAttribute("data-person", JSON.stringify(person))
+
     </script>
   </body>
 </html>
